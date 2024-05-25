@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create a class
+        class student
+        {
+            //prototype
+            message()
+            {
+                console.log("this is message method")
+            }
+            //prototype
+            sum()
+            {
+                //prototype
+                let num1 = parseInt("500");
+                let num2 = parseInt("200");
+                let res = num1 + num2;
+                console.log(res);
+                console.log(typeof num1);
+            }
+            static std_detail()
+            {
+            let name = "zeeshan";
+            let email = "zeeshan@gmail.com";
+            let password = "12345";
+            document.write('<h1> student detatil </h1> <br> ${name} <br> ${email} <br> ${password}')
+            }
+            //create a object
+          
+        }
+
+        let std = new student();
+            std.message();
+            std.message();
+            std.sum();
+            student.std_detail();
+            student.std_detail();
+    </script>
+
+    
+</body>
+</html>

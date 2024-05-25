@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label >Name :</label>
+        <input type="text" placeholder="enter your name" onfocus="focusfunction(this)" onblur="blurfunction(this)" oninput="inputfunction(this)" >
+        <br><br>
+        <label >Email :</label>
+        <input type="text" placeholder="enter your Email" onfocus="focusfunction(this)" onblur="blurfunction(this)">
+    </form>
+
+    <br><br>
+    <div id="test" style="border: 1px solid burlywood"></div>
+    <br><br>
+    <select onchange="changefunction(this)">
+    <option value="iphone7">iphone7</option>
+    <option value="iphone8">iphone8</option>
+    <option value="iphone9">iphone9</option>
+    <option value="iphonex">iphonex</option>
+    <option value="iphone11">iphone11</option>
+    </select>
+    <!-- <div id="test" style="border: 1px solid burlywood"></div> -->
+
+    <script>
+        function focusfunction(ela)
+        {
+            ela.style.background="lightblue"
+        }
+
+        function blurfunction(ela)
+        {
+            ela.style.background="blue"
+        }
+        function inputfunction(a)
+        {
+            var user_input = a.value;
+            document.getElementById("test").innerHTML = user_input;
+        }
+        function changefunction(change)
+        {
+        var change_product = change.value;
+        document.getElementById("test").innerHTML = change_product;
+        }
+        document.getElementById.src
+        
+    </script>
+</body>
+</html>
